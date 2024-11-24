@@ -7,11 +7,18 @@
 
 import SwiftUI
 
+// MVVM Arch -
+// Model - data point
+// View - UI
+// View Model - manages Models for View
+
 @main
 struct TestApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView{
+                ListView()
+            }
         }
     }
 }
