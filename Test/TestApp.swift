@@ -14,11 +14,14 @@ import SwiftUI
 
 @main
 struct TestApp: App {
+    
+    @StateObject var listViewModel:ListViewModel = ListViewModel()
+    
     var body: some Scene {
         WindowGroup {
             NavigationView{
                 ListView()
-            }
+            }.environmentObject(listViewModel)
         }
     }
 }
