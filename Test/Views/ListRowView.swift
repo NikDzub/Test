@@ -23,8 +23,6 @@ struct ListRowView: View {
     }
 }
 
-
-
 #Preview {
     let item1 = ItemModel(title: "First bro",isCompleted: false)
     let item2 = ItemModel(title: "Second bro",isCompleted: false)
